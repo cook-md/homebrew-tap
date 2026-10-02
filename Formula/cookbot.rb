@@ -4,6 +4,8 @@ class Cookbot < Formula
   version "0.1.10"
   license "MIT"
 
+  deprecate! date: "2026-10-02", because: "is replaced by CookBot in Cook Editor (https://cook.md/editor)"
+
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/cook-md/cookbot/releases/download/cookbot-v0.1.10/cookbot-x86_64-apple-darwin.tar.gz"
